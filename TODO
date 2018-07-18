@@ -1,0 +1,41 @@
+# This file works as a scratchpad and worklog for the project
+
+features:
+	☐ Create a "notification-queue" to make sure no notification gets closed 	 because another is shown.
+	☐ Update types
+	☐ Update profiles
+cli-router:
+	☐ use functionality that lets user run profile on a list of dates
+
+tests:
+	unit-tests:
+		☐ test cli-controller
+		☐ test cli-router
+	Integration-tests:
+		☐ write integration tests (using in memory db)
+
+Deployment:
+	☐ figure out how to package and install(pkg) @started(18-06-25 18:52)
+	☐ write documentation (jsDoc?) @started(18-06-24 15:00)
+	☐ write README/HowTos @started(18-06-27 18:30)
+
+Archive:
+  ✔ Remove notifications @done(18-06-27 18:30) @project(features)
+  ✔ Remove types @done(18-06-27 18:30) @project(features)
+  ✔ Remove profiles @done(18-06-27 18:30) @project(features)
+  ✔ Run profile from/until date AND datetime @started(18-06-27 07:16) @done(18-06-27 17:36) @lasted(10h20m51s) @project(features)
+  ✔ start using Bluebird @done(18-06-21 13:07) @project(refactoring)
+  ✔ User can use"day-names" (friday, monday, etc) in cli queries @done(18-06-21 13:06) @project(Features)
+  ✔ run profiles between dates @done(18-06-21 13:06) @project(Features)
+  ✔ create daemon that reads notifications and runs them. @started(18-06-19 13:50) @done(18-06-21 13:06) @lasted(1d23h16m17s) @project(Features)
+  ✔ // TODO List notifications and their associated type @file:///Users/emilen/Projects/worknotifier/lib/cli/cli-controller.js#147 @done(18-06-18 22:40) @project(cli-controller.js)
+  ✔ // TODO List messages instead of associated notifications @file:///Users/emilen/Projects/worknotifier/lib/cli/cli-controller.js#132 @done(18-06-18 22:04) @project(cli-controller.js)
+  ✔ // TODO make a function that runs a profile on dates in an array @file:///Users/emilen/Projects/worknotifier/lib/cli/cli-controller.js#187 @started(18-06-18 14:00) @done(18-06-18 21:51) @lasted(7h51m13s) @project(cli-controller.js)
+  ✔ profile-service @done(18-06-18 20:29) @project(cleanup)
+  ✔ create-tables @done(18-06-18 20:29) @project(cleanup)
+  ✔ db-tables @done(18-06-18 20:29) @project(cleanup)
+  ✔ Remove unused services @done(18-06-18 20:29) @project(cleanup)
+  ✔ type-service @done(18-06-18 20:29) @project(cleanup)
+  ✔ notification-service @done(18-06-18 20:29) @project(cleanup)
+  ✔ // TODO fill notificationPromises and run them. @file:///Users/emilen/Projects/worknotifier/lib/cli/cli-controller.js#170 @done(18-06-18 13:04) @project(cli-controller.js)
+  ✔ // TODO refactor to use new db-service @file:///Users/emilen/Projects/worknotifier/lib/cli/cli-controller.js#147 @done(18-06-18 13:04) @project(cli-controller.js)

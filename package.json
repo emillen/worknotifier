@@ -1,0 +1,43 @@
+{
+  "name": "worknotifier",
+  "version": "1.0.0",
+  "description": "Notifies user of what to do on getting on their workshift",
+  "main": "lib/cli.js",
+  "directories": {
+    "test": "test",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --recursive --require babel-core/register",
+    "test:watch": "node_modules/.bin/mocha --recursive --watch --require babel-core/register",
+    "start": "node dist/cli.js",
+    "cli": "node_modules/.bin/babel-node --presets es2015,stage-2  -- lib/cli.js ",
+    "build": "node_modules/.bin/babel lib -d out",
+    "package": "npm run build; node_modules/.bin/pkg out/cli.js --targets macos --out-path dist; node_modules/.bin/pkg out/daemon.js --targets macos --out-path dist",
+    "doc": "node_modules/.bin/jsdoc lib -r -d docs"
+  },
+  "author": "Emil Lengman",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.3.0",
+    "commander": "^2.15.1",
+    "inquirer": "^6.0.0",
+    "jsdoc": "^3.5.5",
+    "moment": "^2.22.2",
+    "node-notifier": "^5.2.1",
+    "pkg": "^4.3.3",
+    "sequelize": "^4.38.0",
+    "shelljs": "^0.8.2",
+    "sqlite3": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-spies": "^1.0.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "sinon": "^5.1.1"
+  }
+}
